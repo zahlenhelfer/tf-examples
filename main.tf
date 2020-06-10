@@ -4,10 +4,20 @@ provider "aws" {
 
 resource "aws_instance" "web" { 
   ami           = var.ami_id
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
 
   tags = {
     Name = "Terraform Server 1",
     Kst = "666"
+  }
+}
+
+resource "aws_instance" "web2" { 
+  ami           = var.ami_id
+  instance_type = var.instance_type
+
+  tags = {
+    Name = "Terraform Server 2",
+    Kst = "4711"
   }
 }
