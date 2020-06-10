@@ -2,9 +2,8 @@ provider "aws" {
   region     = "eu-central-1"
 }
 
-# Mein erster Webserver mit Terraform
 resource "aws_instance" "web" { 
-  ami           = "ami-0a02ee601d742e89f"
+  ami           = var.ami_id
   instance_type = "t2.micro"
 
   tags = {
