@@ -21,3 +21,7 @@ variable "security_group_name" {
 variable "server_port" {
   type = number
 }
+
+variable "vpc_id" {
+  type = string
+}
