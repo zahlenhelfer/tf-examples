@@ -1,11 +1,11 @@
 # Terraform Provider suchen und Installieren
-terraform init
+`terraform init`
 
 # Infrastruktur-Plan erstellen
-terraform plan
+`terraform plan`
 
 # Infrastruktur erstellen
-terraform apply
+`terraform apply`
 
 # Infrastruktur zerstören
 `terraform destroy`
